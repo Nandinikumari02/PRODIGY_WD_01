@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+background-image: url("background.jpg");
+background-size:  cover ;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 50px;
+    color: #333;
+    border-end-end-radius: #0f0f0f;
+}
+
+#gameModeButtons {
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+#gameModeButtons button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+    background-color: #333;
+    color: #fff;
+}
+
+#gameModeButtons button.active {
+    background-color: #555;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+    border-radius: 20px;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+#statusDisplay {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #0f0f0f;
+}
